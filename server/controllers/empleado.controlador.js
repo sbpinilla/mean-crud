@@ -18,7 +18,7 @@ empleadoControlador.getEmpleado = async (req, res) => {
 
 empleadoControlador.crearEmpleado = async (req, res) => {
     const nuevoEmpleado = new EmpleadoModel(req.body);
-    // console.log(nuevoEmpleado);
+    console.log(nuevoEmpleado);
     await nuevoEmpleado.save();
 
     res.json({
